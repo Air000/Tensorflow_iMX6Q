@@ -30,13 +30,13 @@ Tensorflow C++ source on Linux i.MX6 porting guide
   * Build `nsync`:
     * Build a native(x86) version: 
       ```
-      export HOST_NSYNC_LIB=\`tensorflow/contrib/makefile/compile_nsync.sh\`
+      export HOST_NSYNC_LIB=`tensorflow/contrib/makefile/compile_nsync.sh`
       ```
       The object files locate on `tensorflow/contrib/makefile/downloads/nsync/builds/default.li
 nux.c++11/`
     * Build a ARM version:
       ```
-      export TARGET_NSYNC_LIB=\`tensorflow/contrib/makefile/compile_nsync.sh -t linux -a armv7\`
+      export TARGET_NSYNC_LIB=`tensorflow/contrib/makefile/compile_nsync.sh -t linux -a armv7`
       ```
       this command will create a `armv7.linux.c++11/` directory in `tensorflow/contrib/makefile/downloads/nsync/builds/`,
       and generate native(x86) object files, we need to recompile an arm version:
