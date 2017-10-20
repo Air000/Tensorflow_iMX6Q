@@ -24,7 +24,6 @@ Tensorflow C++ source on Linux i.MX6 porting guide
       * `CC=arm-linux-gnueabihf-gcc CXX=arm-linux-gnueabihf-g++ ./configure --host=arm-linux --with-protoc=/usr/bin/protoc`
       * `rm -r src/.libs`
       * Run `make` in `src/`
-      * `cp src/.libs/* ` 
     * Copy useful libs to tensorflow root directory:
       * `cd tensorflow-master/ && mkdir build`
       * `cp -r tensorflow/contrib/makefile/downloads/protobuf/src/.libs build/libs`
